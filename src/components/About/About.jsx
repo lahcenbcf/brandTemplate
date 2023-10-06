@@ -1,5 +1,6 @@
 import React from 'react'
 import brandIdea from "../../assets/brandIdea.jpg"
+import "./styles.css"
 function About() {
   return (
     <div className='about'>
@@ -18,8 +19,10 @@ function About() {
         {/*-
         image
     -*/}
-
+        <div className='image'>
         <img src={brandIdea} alt='brandIdea' />
+        </div>
+        
 
     </div>
   )
