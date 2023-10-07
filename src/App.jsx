@@ -1,6 +1,8 @@
 import {BrowserRouter as Router,Route,Routes, Outlet} from 'react-router-dom'
 //import pages
 import AboutUs from './pages/AboutUs'
+import OurWork from './pages/OurWork'
+import Contact from "./pages/Contact"
 import Navbar from './components/navbar/Navbar'
 function App() {
   return (
@@ -8,6 +10,8 @@ function App() {
     <Routes>
     <Route path='/' element={<AppLayout />}>
     <Route path='/' element={<AboutUs />} />
+    <Route path='/ourwork' element={<OurWork />} />
+    <Route path="/contact" element={<Contact />} />
     </Route>
     
         

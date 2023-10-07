@@ -1,0 +1,19 @@
+.faq{
+    max-width: 1200px;
+    margin: 6rem auto;
+    padding: 1rem;
+}
+.question{
+    margin: 2rem 0px;
+    border-bottom: solid 3px #ccc;
+    padding-bottom: 2rem;
+}
+.question p{
+    width: 100%;
+}
+
+@media(min-width:800px){
+ .question p{
+    width: 70%;
+ }
+}

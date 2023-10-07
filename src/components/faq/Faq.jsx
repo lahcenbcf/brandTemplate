@@ -1,5 +1,4 @@
-import React from 'react'
-
+import "./styles.css"
 function Faq() {
   return (
     <div className='faq'>
