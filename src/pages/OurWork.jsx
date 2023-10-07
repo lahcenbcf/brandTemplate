@@ -1,27 +1,23 @@
-import racer from "../assets/racer.jpg"
-import fitness from "../assets/fitness.jpg"
-import goodTimes from "../assets/goodTimes.jpg"
+import { Link } from 'react-router-dom'
+//Animation 
+import { pageAnimation } from './animations'
+import { motion } from 'framer-motion'
 import {moviesState} from "./state/movieState"
 const OurWork = () => {
    
   return (
-    <div className="work">
-      <div className="movie">
-          <h2>The Athelete</h2>
+    <motion.div className="work" variants={pageAnimation} initial="hidden" animate="show"  exit="exit">
+    {
+      moviesState().map(work=>(
+        <div className="movie">
+          <h2>{work.title}</h2>
           <div className="line"></div>
-          <img src={fitness} alt="athelete" />
+          <img src={work.mainImg} alt={work.title} />
+          <Link to={work.url}><button>see more</button></Link>
       </div>
-      <div className="movie">
-          <h2>Good Times</h2>
-          <div className="line"></div>
-          <img src={goodTimes} alt="good Times" className="goodTimes" />
-      </div>
-      <div className="movie">
-          <h2>The Racer</h2>
-          <div className="line"></div>
-          <img src={racer} alt="racer" />
-      </div>
-    </div>
+      ))
+    }
+    </motion.div>
   )
 }
 

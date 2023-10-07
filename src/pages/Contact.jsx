@@ -1,6 +1,9 @@
+//Animation 
+import { pageAnimation } from './animations'
+import { motion } from 'framer-motion'
 function Contact() {
   return (
-    <div>Contact</div>
+    <motion.div variants={pageAnimation} initial="hidden" animate="show" exit="exit">Contact</motion.div>
   )
 }
 

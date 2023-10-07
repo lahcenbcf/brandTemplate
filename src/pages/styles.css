@@ -41,12 +41,15 @@ img.goodTimes{
 .awards{
     min-height: 80vh;
     display: flex;
-    margin: 5rem 10rem;
+    flex-wrap: wrap;
+    margin: 5rem 5rem;
     align-items: center;
     justify-content: space-around;
 }
 .award{
-    padding: 5rem;
+    flex-basis: 200px;
+    flex-grow: 1;
+    padding: 1rem;
     .line{
         width: 50%;
         background-color: #23d997;

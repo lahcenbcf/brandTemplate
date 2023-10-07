@@ -1,6 +1,9 @@
 import {useLocation} from "react-router-dom"
 import { moviesState } from "./state/movieState"
 import { useEffect, useState } from "react"
+//Animation 
+import { pageAnimation } from './animations'
+import { motion } from 'framer-motion'
 import {v4 as uuidv4} from "uuid"
 function WorkDetail() {
     const {pathname}=useLocation()
@@ -9,7 +12,7 @@ function WorkDetail() {
         setWorkItem(...moviesState().filter(m=>m.url === pathname))
     },[])
   return (
-    <div className="workDetails">
+    <motion.div variants={pageAnimation} initial="hidden" animate="show" exit="exit" className="workDetails">
         <h2>
             {workItem?.title}
         </h2>
@@ -24,7 +27,7 @@ function WorkDetail() {
         <div className="secondImg">
             <img src={workItem?.secondImg} alt={workItem?.title} />
         </div>
-    </div>
+    </motion.div>
   )
 }
 
