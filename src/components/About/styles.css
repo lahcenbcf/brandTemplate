@@ -5,9 +5,14 @@
     flex-direction: column;
     gap: 3rem;
     align-items: center;
+    
+}
+.about .image{
+    z-index: 2;
 }
 .about .content{
     max-width: 70%;
+    z-index: 2;
     margin: 0px auto;
     text-align: center;
 }

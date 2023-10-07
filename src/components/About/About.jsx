@@ -3,6 +3,7 @@ import {motion  } from "framer-motion"
 import { titleAnimations,fadeAnim,photoAnim } from "../../pages/animations"
 import brandIdea from "../../assets/brandIdea.jpg"
 import "./styles.css" 
+import Wave from "./Wave"
 function About() {
   /*const titleAnim={
     hidden:{
@@ -26,7 +27,10 @@ function About() {
   }*/
   return (
     <div className='about'>
-        {/*-
+
+    {/* render wave */}
+      <Wave />
+    {/*-
         Content
     -*/}
         <div className='content'>
