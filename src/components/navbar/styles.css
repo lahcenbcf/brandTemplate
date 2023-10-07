@@ -1,0 +1,71 @@
+nav{
+    background-color: #282828;
+}
+.nav{
+    max-width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+}
+
+/*mobile screen*/
+.nav h1{
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: .5rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    /*here the nav items will go to bottom*/
+}
+.nav .navItems{
+    display: flex;
+    gap: 2rem;
+}
+.nav .navItems *{
+    position: relative;
+    color: #ccc;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav .navItems *::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #23d997;
+    border: 5%;
+}
+.nav .navItems *:hover::after{
+    animation-name: fade;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode:both;
+}
+@media(min-width:700px){
+    .nav{
+        justify-content: space-between;
+    }
+    .nav h1{
+        /*default value*/
+        flex-basis:auto;
+        margin-bottom: 0;
+    }
+}
+
+
+/* add animations */
+@keyframes fade {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}

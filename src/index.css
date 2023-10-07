@@ -21,7 +21,7 @@ button{
   transition: all .4s ease-in-out;
   color: white;
   &:hover{
-    background-color:#23d998 ;
+    background-color:#23d997;
     color: white;
   }
 }
