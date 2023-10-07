@@ -24,3 +24,43 @@ object-fit: cover;
 img.goodTimes{
     object-position: 2rem -30rem;
 }
+.workDetails{
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 1rem;
+}
+.workDetails h2{
+    color: white;
+    text-align: center;
+}
+.workDetails img{
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+}
+.awards{
+    min-height: 80vh;
+    display: flex;
+    margin: 5rem 10rem;
+    align-items: center;
+    justify-content: space-around;
+}
+.award{
+    padding: 5rem;
+    .line{
+        width: 50%;
+        background-color: #23d997;
+        height: 4px;
+        margin: .4rem;
+    }
+}
+.award h3{
+    color: #ccc;
+}
+.award p{
+    width: 80%;
+    color: gray;
+}
+.secondImg{
+    max-height: 60vh;
+}

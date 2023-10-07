@@ -1,7 +1,9 @@
 import racer from "../assets/racer.jpg"
 import fitness from "../assets/fitness.jpg"
 import goodTimes from "../assets/goodTimes.jpg"
+import {moviesState} from "./state/movieState"
 const OurWork = () => {
+   
   return (
     <div className="work">
       <div className="movie">
