@@ -30,6 +30,9 @@ img{
     font-size: .9rem;
     padding-right: 4rem;
 }
+h3{
+    color: #ccc ;
+}
 
 @media(min-width:700px){
     .services{

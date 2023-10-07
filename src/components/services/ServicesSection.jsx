@@ -4,12 +4,15 @@ import {arr} from "./data"
 import services from "../../assets/services.jpg"
 import ServiceCard from './serviceCard'
 import "./services.css"
+//animation
+import { motion } from 'framer-motion';
+import {photoAnim,titleAnimations,fadeAnim} from "../../pages/animations"
 function ServicesSection() {
   return (
     <div className='services'>
         {/* description */}
         <div className='content'>
-        <h2>High <span>quality </span>Service</h2>
+        <motion.h2>High <span>quality </span>Service</motion.h2>
         <div className='cards'>
              {
                 arr.map(item=>(
@@ -20,7 +23,7 @@ function ServicesSection() {
         </div>
        
         <div className='image'>
-             <img src={services} alt='services' />
+             <motion.img variants={photoAnim} src={services} alt='services' />
         </div>
     </div>
   )
