@@ -8,7 +8,7 @@ export const pageAnimation={
        
         y:0,
         transition: {
-            duration:1,
+            duration:0.5,
             when:"beforeChildren",
             staggerChildren:0.5
         }
@@ -51,6 +51,33 @@ export const photoAnim={
     show:{
         scale:1,
         opacity:1,
+        transition:{
+            duration:0.75,
+            ease:"easeOut"
+        }
+    }
+}
+export const lineAnimation={
+    hidden:{
+        width:0
+    },
+    show:{
+        width:"100%",
+        transition:{
+            duration:1,
+            ease:"easeOut"
+        }
+    }
+}
+
+export const frameAnim={
+    hidden:{
+        x:"-130%",
+        skew:"45deg"
+    },
+    show:{
+        x:"100%",
+        skew:"0deg",
         transition:{
             duration:0.75,
             ease:"easeOut"
