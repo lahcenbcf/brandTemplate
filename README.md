@@ -1,8 +1,23 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Brand Template Website using React js
 
-Currently, two official plugins are available:
+in this project, I have created a template website for brand or company
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Authors
+
+- [@lahcenbcf](https://www.github.com/lahcenbcf)
+
+
+## 🚀 About Me Hassane BENCHAREF
+I'm a full stack web developer...
+
+
+## 🔗 Links
+[![linkedin](https://www.linkedin.com/in/hassane-bencharef-2b2667248/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B98SqTONmQne4K7jT%2BPclpg%3D%3D)](https://www.linkedin.com/)
+
+
+
+## 🛠 Skills
+Javascript, HTML, CSS...
+MongoDB,ExpressJS
